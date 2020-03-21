@@ -22,7 +22,7 @@ md5sums=('SKIP')
 validpgpkeys=()
 
 pkgver() {
-  cd "${_pkgname}"
+  cd st-distrotube
   _pkgver=$(awk '/VERSION/ {print $3}' config.mk|head -1)
   echo "${_pkgver}.r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
 }
