@@ -1,6 +1,6 @@
 # Maintainer: Derek Taylor (DistroTube) <derek@distrotube.com>
 pkgname=st-distrotube-git
-pkgver=0.8.2
+pkgver=.r8.0dd3747
 pkgrel=1
 pkgdesc="A heavily-patched and customized build of st (the Suckless simple terminal) from DistroTube."
 arch=(x86_64 i686)
@@ -22,7 +22,7 @@ md5sums=('SKIP')
 validpgpkeys=()
 
 pkgver() {
-  cd st-distrotube
+  cd "${_pkgname}"
   _pkgver=$(awk '/VERSION/ {print $3}' config.mk|head -1)
   echo "${_pkgver}.r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
 }
