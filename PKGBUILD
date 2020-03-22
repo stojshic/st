@@ -1,6 +1,6 @@
 # Maintainer: Derek Taylor (DistroTube) <derek@distrotube.com>
 pkgname=st-distrotube-git
-pkgver=.r8.0dd3747
+pkgver=.r9.ed0183b
 pkgrel=1
 pkgdesc="A heavily-patched and customized build of st (the Suckless simple terminal) from DistroTube."
 arch=(x86_64 i686)
