@@ -6,10 +6,17 @@
 
 /* See LICENSE file for copyright and license details. */
 /* appearance */
+
+// Mononoki Nerd Font looks awesome. The Nerd Fonts are in the AUR. 
 static char *font = "Mononoki Nerd Font:pixelsize=14:antialias=true:autohint=true";
+
+// Font2 patch allows us to set additional fonts for unicode coverage. The Symbola
+// font is useful for this. It is available in the AUR for Arch users.
 static char *font2[] = {
-	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true",
-	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true",
+	"Monospace:pixelsize=12:antialias=true:autohint=true",
+	"Symbola:pixelsize=12:antialias=true:autohint=true",
+	"DejaVu Sans Mono:pixelsize=12:antialias=true:autohint=true",
+	"Noto Sans Mono:pixelsize=12:antialias=true:autohint=true"
 };
 static int borderpx = 2;
 
