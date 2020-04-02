@@ -6,10 +6,16 @@
 
 /* See LICENSE file for copyright and license details. */
 /* appearance */
+
+/* Mononoki Nerd Font must be installed from AUR nerd-fonts-complete.
+ * Otherwise, your default font will be Hack which is found in the standard
+ * Arch repos and is listed as a dependency for this build. JoyPixels is also
+ * a hard dependency and makes colored fonts and emojis possible.
+ */
 static char *font = "Mononoki Nerd Font:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = {
-	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true",
-	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true",
+	"Hack:pixelsize=14:antialias=true:autohint=true",
+	"JoyPixels:pixelsize=14:antialias=true:autohint=true",
 };
 static int borderpx = 2;
 
@@ -92,7 +98,7 @@ unsigned int tabspaces = 8;
  * 0xee adds wee bit of transparency.
  * Play with the value to get desired transparency.
  */
-unsigned int alpha = 0xff; 
+unsigned int alpha = 0xee; 
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -200,6 +206,10 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+	{ TERMMOD,              XK_Page_Up,     kscrollup,      {.i =  1} },
+	{ TERMMOD,              XK_Page_Down,   kscrolldown,    {.i =  1} },
+	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
+	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 };
 
 /*
