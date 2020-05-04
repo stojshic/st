@@ -32,4 +32,4 @@ Download the source code from this repository or use a git clone:
 	cd st-distrotube
     sudo make clean install
 	
-NOTE: Installing st-distrotube will overwrite your existing st installation.
+NOTE: Installing st-distrotube will overwrite your existing st installation so make a backup of your current config if you need it.
