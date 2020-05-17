@@ -12,10 +12,10 @@
  * Arch repos and is listed as a dependency for this build. JoyPixels is also
  * a hard dependency and makes colored fonts and emojis possible.
  */
-static char *font = "Mononoki Nerd Font:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Mononoki Nerd Font:pixelsize=15:antialias=true:autohint=true";
 static char *font2[] = {
-	"Hack:pixelsize=14:antialias=true:autohint=true",
-	"JoyPixels:pixelsize=14:antialias=true:autohint=true",
+	"Hack:pixelsize=15:antialias=true:autohint=true",
+	"JoyPixels:pixelsize=15:antialias=true:autohint=true",
 };
 static int borderpx = 2;
 
@@ -98,7 +98,7 @@ unsigned int tabspaces = 8;
  * 0xee adds wee bit of transparency.
  * Play with the value to get desired transparency.
  */
-unsigned int alpha = 0xff; 
+unsigned int alpha = 0xee; 
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
